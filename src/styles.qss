@@ -619,7 +619,7 @@ QPushButton:focus
 
 QPushButton:disabled
 {
-    background: rgba(139, 0, 0, .5);
+    background: rgba(139, 0, 0, .4);
     border-width: 0.1ex;
     border-color: #454545;
     border-style: solid;
