@@ -674,7 +674,7 @@ QComboBox:focus
 
 QComboBox:disabled
 {
-    background: rgba(139, 0, 0, .5);
+    background: rgba(139, 0, 0, .4);
     color: red;
 }
 
