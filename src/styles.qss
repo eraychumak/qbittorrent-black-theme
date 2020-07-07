@@ -1179,6 +1179,10 @@ QListView::item:selected:active
     background: #111;
 }
 
+QListView::item:selected:!active {
+    background: #111;
+}
+
 /*
     QTREEVIEW
 */
