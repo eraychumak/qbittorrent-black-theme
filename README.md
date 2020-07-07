@@ -2,6 +2,10 @@
 
 A fully black theme for qBittorrent, not gray like most of them; just simple black and white, nothing else.
 
+## Preview
+
+![qBittorrent Black Theme Preview](./preview/client.jpeg "qBittorrent Black Theme Preview")
+
 ## Prerequisites
 
 - python3
