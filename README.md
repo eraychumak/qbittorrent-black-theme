@@ -1,6 +1,6 @@
 # qBittorrent / Black
 
-A fully black theme for qBittorrent, not gray like most of them; just simple black and white, nothing else.
+A fully dark theme for qBittorrent; just simple black and white, nothing else.
 
 ## Preview
 
