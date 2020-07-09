@@ -262,6 +262,7 @@ QPushButton,
 QPushButton:enabled,
 QPushButton:focus
 {
+    padding: 5px 10px;
     background: #111;
     color: #fbeee4;
 }
@@ -271,7 +272,7 @@ QPushButton:hover {
 }
 
 QPushButton:pressed {
-    padding: 0;
+    padding: 5px 10px;
     border: none;
     background: #333;
 }
@@ -366,12 +367,35 @@ QGroupBox {
     background: #000;
     border: 2px solid #232629;
     padding: 5px;
-    margin-top: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
 }
 
 QGroupBox::title {
     subcontrol-origin: margin;
     subcontrol-position: top left;
-    left: 5px;
+    left: 20px;
     padding: 8px 5px 20px 5px;
+}
+
+TransferListWidget {
+    qproperty-downloadingStateForeground: #03c03c;
+    qproperty-forcedDownloadingStateForeground: #03c03c;
+    qproperty-downloadingMetadataStateForeground: #03c03c;
+    qproperty-allocatingStateForeground: #cccccc;
+    qproperty-stalledDownloadingStateForeground: #fdfd96;
+    qproperty-stalledUploadingStateForeground: #fdfd96;
+    qproperty-uploadingStateForeground: #63b8ff;
+    qproperty-forcedUploadingStateForeground: #63b8ff;
+    qproperty-pausedDownloadingStateForeground: #c23b22;
+    qproperty-pausedUploadingStateForeground: #c23b22;
+    qproperty-errorStateForeground: red;
+    qproperty-missingFilesStateForeground: red;
+    qproperty-queuedDownloadingStateForeground: #00cdcd;
+    qproperty-queuedUploadingStateForeground: #00cdcd;
+    qproperty-checkingDownloadingStateForeground: #00cdcd;
+    qproperty-checkingUploadingStateForeground: #00cdcd;
+    qproperty-checkingResumeDataStateForeground: #00cdcd;
+    qproperty-movingStateForeground: #00cdcd;
+    qproperty-unknownStateForeground: red;
 }
