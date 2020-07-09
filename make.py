@@ -10,10 +10,10 @@ def allFiles(glob):
     [dir, pattern] = os.path.split(glob)
 
     l = list()
- 
+
     for root, subdir, files in os.walk(dir):
         l.extend([os.path.join(root, x) for x in files if fnmatch.fnmatch(x, pattern)])
- 
+
     return l
 
 parser = argparse.ArgumentParser(description="helper to create qbtthemes")
@@ -31,7 +31,6 @@ if not args.output.endswith(".qbtheme"):
 
 if os.path.exists(args.output):
     print("%s already exists, overwriting..." % (args.output))
-    
 
 files = allFiles(os.path.join(args.baseDir, "*"))
 
@@ -40,7 +39,6 @@ if args.findFiles:
     stylesheet = open(os.path.join(args.baseDir, args.style)).read()
     for f in re.findall(":\/uitheme\/(.*)\)", stylesheet):
         args.files.append(f)
-    
 
 ResourceFiles = list()
 
