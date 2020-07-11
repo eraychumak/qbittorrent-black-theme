@@ -8,8 +8,7 @@ A fully dark theme for qBittorrent; just simple black and white, nothing else.
 
 ## Prerequisites
 
-- python3
-- pyrrc5
+- Python
 
 ## Setup
 
