@@ -364,6 +364,23 @@ QComboBox QAbstractItemView {
     background: #111;
 }
 
+QComboBox::drop-down {
+    subcontrol-origin: margin;
+    subcontrol-position: top right;
+    width: 6ex;
+    background: #222;
+}
+
+QComboBox::down-arrow {
+    image: url(:/uitheme/assets/down_arrow_disabled.svg);
+    width: 2ex;
+    height: 2ex;
+}
+
+QComboBox::drop-down:on {
+    background: #333;
+}
+
 /*
     QSpinBox
 */
