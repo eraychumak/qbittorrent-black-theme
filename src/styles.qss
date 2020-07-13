@@ -127,6 +127,15 @@ QToolTip {
 }
 
 /*
+    QTabWidget
+*/
+
+QTabWidget::pane {
+    margin: 0;
+    padding: 0;
+}
+
+/*
     QListView
 */
 
