@@ -111,7 +111,17 @@ QMainWindow {
     QFrame
 */
 
-QFrame, QLabel, QToolTip {
+QFrame, QLabel {
+    background: #000;
+    color: #fbeee4;
+}
+
+/*
+    QToolTip
+*/
+
+QToolTip {
+    border: none;
     background: #000;
     color: #fbeee4;
 }
