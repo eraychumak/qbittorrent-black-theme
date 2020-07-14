@@ -137,6 +137,26 @@ QTabWidget::pane {
 }
 
 /*
+    QTABBAR
+    top
+*/
+
+QTabBar::tab:top {
+    background: #111;
+    color: #fbeee4;
+    margin: 0;
+    padding: 5px;
+}
+
+QTabBar::tab:top:hover {
+    background: #222;
+}
+
+QTabBar::tab:top:selected {
+    background: #222;
+}
+
+/*
     QListView
 */
 
@@ -284,8 +304,7 @@ QScrollBar::sub-page:vertical
 */
 
 QPushButton,
-QPushButton:enabled,
-QPushButton:focus
+QPushButton:enabled
 {
     padding: 5px 10px;
     background: #111;
@@ -293,6 +312,11 @@ QPushButton:focus
 }
 
 QPushButton:hover {
+    background: #222;
+}
+
+QPushButton:focus {
+    outline: none;
     background: #222;
 }
 
