@@ -5,7 +5,7 @@
 
 QWidget {
     background: #000;
-    color: #fbeee4;
+    color: #f5f5f7;
     border: none;
 }
 
@@ -19,7 +19,7 @@ QMenuBar {
 
 QMenuBar::item {
     padding: 5px 10px;
-    color: #fbeee4;
+    color: #f5f5f7;
 }
 
 QMenuBar::item:selected {
@@ -40,7 +40,7 @@ QMenu {
 
 QMenu::item {
     background: #000;
-    color: #fbeee4;
+    color: #f5f5f7;
 }
 
 QMenu::item:selected {
@@ -114,7 +114,11 @@ QMainWindow {
 QFrame, QLabel {
     outline: none;
     background: #000;
-    color: #fbeee4;
+    color: #f5f5f7;
+}
+
+QLabel:disabled {
+    color: #555;
 }
 
 /*
@@ -124,7 +128,7 @@ QFrame, QLabel {
 QToolTip {
     border: none;
     background: #000;
-    color: #fbeee4;
+    color: #f5f5f7;
 }
 
 /*
@@ -143,7 +147,7 @@ QTabWidget::pane {
 
 QTabBar::tab:top {
     background: #111;
-    color: #fbeee4;
+    color: #f5f5f7;
     margin: 0;
     padding: 5px;
 }
@@ -161,7 +165,7 @@ QTabBar::tab:top:selected {
 */
 
 QListView {
-    color: #fbeee4;
+    color: #f5f5f7;
     border: none;
 }
 
@@ -176,7 +180,7 @@ QListView::item:selected:active {
 
 QListView::item:selected:!active {
     background: #111;
-    color: #fbeee4;
+    color: #f5f5f7;
 }
 
 /*
@@ -194,7 +198,7 @@ QTableView {
 
 QTreeView {
     background: #000;
-    color: #fbeee4;
+    color: #f5f5f7;
     border: none;
 }
 
@@ -208,7 +212,7 @@ QTreeView::item:pressed {
 
 QTreeView::item:selected {
     background: #111;
-    color: #fbeee4;
+    color: #f5f5f7;
 }
 
 /*
@@ -246,7 +250,7 @@ QScrollBar::right-arrow:horizontal
 {
     width: 5px;
     height: 5px;
-    background: #fbeee4;
+    background: #f5f5f7;
 }
 
 QScrollBar::add-page:horizontal,
@@ -290,7 +294,7 @@ QScrollBar::down-arrow:vertical
 {
     width: 5px;
     height: 5px;
-    background: #fbeee4;
+    background: #f5f5f7;
 }
 
 QScrollBar::add-page:vertical,
@@ -308,7 +312,7 @@ QPushButton:enabled
 {
     padding: 5px 10px;
     background: #111;
-    color: #fbeee4;
+    color: #f5f5f7;
 }
 
 QPushButton:hover {
@@ -326,6 +330,10 @@ QPushButton:pressed {
     background: #333;
 }
 
+QPushButton:disabled {
+    color: #555;
+}
+
 /*
     QLineEdit
 */
@@ -334,8 +342,15 @@ QLineEdit,
 QLineEdit:read-only
 {
     background: #111;
-    color: #fbeee4;
+    color: #f5f5f7;
     border: none;
+    padding: 4px;
+}
+
+QLineEdit:disabled,
+QLineEdit:disabled:read-only
+{
+    color: #555;
 }
 
 /*
@@ -344,7 +359,7 @@ QLineEdit:read-only
 
 QHeaderView::section {
     background: #111;
-    color: #fbeee4;
+    color: #f5f5f7;
 }
 
 QHeaderView::section:hover {
@@ -369,12 +384,38 @@ QDialog {
 }
 
 /*
+    QCheckbox
+*/
+
+QCheckBox:disabled {
+    color: #555;
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/uitheme/assets/checkbox_checked.svg);
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/uitheme/assets/checkbox_unchecked.svg);
+}
+
+QCheckBox::indicator:checked:disabled {
+    image: url(:/uitheme/assets/checkbox_checked_disabled.svg);
+}
+
+QCheckBox::indicator:unchecked:disabled {
+    image: url(:/uitheme/assets/checkbox_unchecked_disabled.svg);
+}
+
+
+/*
     QComboBox
 */
 
 QComboBox {
     background: #111;
-    color: #fbeee4;
+    color: #f5f5f7;
+    padding: 4px;
 }
 
 QComboBox:focus {
@@ -382,8 +423,7 @@ QComboBox:focus {
 }
 
 QComboBox:disabled {
-    background-color: rgba(139, 0, 0, .4);
-    color: red;
+    color: #555;
 }
 
 QComboBox:on {
@@ -393,7 +433,7 @@ QComboBox:on {
 QComboBox QAbstractItemView {
     background: #111;
     selection-background-color: #222;
-    selection-color: #fbeee4;
+    selection-color: #f5f5f7;
     outline: none;
 }
 
@@ -401,7 +441,7 @@ QComboBox::drop-down {
     subcontrol-origin: margin;
     subcontrol-position: top right;
     width: 6ex;
-    background: #222;
+    background: #111;
 }
 
 QComboBox::down-arrow {
@@ -410,9 +450,9 @@ QComboBox::down-arrow {
     height: 2ex;
 }
 
-QComboBox::drop-down:on {
-    background: #333;
-}
+/* QComboBox::drop-down:on {
+    background: #111;
+} */
 
 /*
     QSpinBox
@@ -420,8 +460,13 @@ QComboBox::drop-down:on {
 
 QSpinBox {
     background: #111;
-    color: #fbeee4;
+    color: #f5f5f7;
     border: none;
+    padding: 4px;
+}
+
+QSpinBox:disabled {
+    color: #555;
 }
 
 QSpinBox:focus {
@@ -445,6 +490,34 @@ QGroupBox::title {
     subcontrol-position: top left;
     left: 10px;
     padding: 8px 5px 20px 5px;
+}
+
+QGroupBox QLabel {
+    color: #aaa;
+}
+
+QGroupBox QCheckBox {
+    color: #aaa;
+}
+
+QGroupBox::title:disabled {
+    color: #555;
+}
+
+QGroupBox::indicator:checked {
+    image: url(:/uitheme/assets/checkbox_checked.svg);
+}
+
+QGroupBox::indicator:unchecked {
+    image: url(:/uitheme/assets/checkbox_unchecked.svg);
+}
+
+QGroupBox::indicator:checked:disabled {
+    image: url(:/uitheme/assets/checkbox_checked_disabled.svg);
+}
+
+QGroupBox::indicator:unchecked:disabled {
+    image: url(:/uitheme/assets/checkbox_unchecked_disabled.svg);
 }
 
 TransferListWidget {
