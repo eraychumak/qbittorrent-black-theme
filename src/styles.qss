@@ -216,6 +216,18 @@ QTreeView::item:selected {
 }
 
 /*
+    QProgrssBar
+*/
+
+QProgressBar {
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background: #0286EE;
+}
+
+/*
     QScrollBar / horizontal
 */
 
@@ -406,7 +418,6 @@ QCheckBox::indicator:checked:disabled {
 QCheckBox::indicator:unchecked:disabled {
     image: url(:/uitheme/assets/checkbox_unchecked_disabled.svg);
 }
-
 
 /*
     QComboBox
