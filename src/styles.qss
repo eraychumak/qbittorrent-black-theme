@@ -215,6 +215,34 @@ QTreeView::item:selected {
     color: #f5f5f7;
 }
 
+QTreeView:disabled {
+    color: #555;
+}
+
+QTreeView::indicator:checked {
+    image: url(:/uitheme/assets/checkbox_checked.svg);
+}
+
+QTreeView::indicator:unchecked {
+    image: url(:/uitheme/assets/checkbox_unchecked.svg);
+}
+
+QTreeView::indicator:checked:disabled {
+    image: url(:/uitheme/assets/checkbox_checked_disabled.svg);
+}
+
+QTreeView::indicator:unchecked:disabled {
+    image: url(:/uitheme/assets/checkbox_unchecked_disabled.svg);
+}
+
+QTreeView::indicator:indeterminate {
+    image: url(:/uitheme/assets/checkbox_indeterminate.svg);
+}
+
+QTreeView::indicator:indeterminate:disabled {
+    image: url(:/uitheme/assets/checkbox_indeterminate_disabled.svg);
+}
+
 /*
     QProgrssBar
 */
@@ -223,8 +251,13 @@ QProgressBar {
     text-align: center;
 }
 
+
 QProgressBar::chunk {
     background: #0286EE;
+}
+
+QProgressBar::chunk:disabled {
+    background: #014377;
 }
 
 /*
@@ -417,6 +450,14 @@ QCheckBox::indicator:checked:disabled {
 
 QCheckBox::indicator:unchecked:disabled {
     image: url(:/uitheme/assets/checkbox_unchecked_disabled.svg);
+}
+
+QCheckBox::indicator:indeterminate {
+    image: url(:/uitheme/assets/checkbox_indeterminate.svg);
+}
+
+QCheckBox::indicator:indeterminate:disabled {
+    image: url(:/uitheme/assets/checkbox_indeterminate_disabled.svg);
 }
 
 /*
