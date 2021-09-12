@@ -580,7 +580,7 @@ TransferListWidget {
     qproperty-uploadingStateForeground: #63b8ff;
     qproperty-forcedUploadingStateForeground: #63b8ff;
     qproperty-pausedDownloadingStateForeground: #c23b22;
-    qproperty-pausedUploadingStateForeground: #c23b22;
+    qproperty-pausedUploadingStateForeground: #22c27d;
     qproperty-errorStateForeground: red;
     qproperty-missingFilesStateForeground: red;
     qproperty-queuedDownloadingStateForeground: #00cdcd;
