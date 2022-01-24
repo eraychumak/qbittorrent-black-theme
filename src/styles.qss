@@ -93,8 +93,10 @@ QToolBar::separator {
 */
 
 QToolButton {
-  background: #000;
+  width: none;
+  height: none;
   border: none;
+  background: #000;
 }
 
 QToolButton:hover {
