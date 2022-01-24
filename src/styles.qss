@@ -203,24 +203,31 @@ QTabBar::tab:top:selected {
 /*
   QListView
 */
-
 QListView {
+  background: #000;
   color: #f5f5f7;
   border: none;
 }
 
+QListView::item {
+  padding: 5px;
+}
+
 QListView::item:hover {
   background: #111;
+  padding: 0px;
 }
 
 QListView::item:selected:active {
   outline: none;
   background: #111;
+  padding: 0px;
 }
 
 QListView::item:selected:!active {
   background: #111;
   color: #f5f5f7;
+  padding: 0px;
 }
 
 /*
@@ -230,6 +237,14 @@ QListView::item:selected:!active {
 QTableView {
   background: #222;
   border: none;
+}
+
+QTableView QLabel {
+  padding: 0 5px;
+}
+
+QTableView QCheckBox {
+  padding-left: 5px;
 }
 
 /*
@@ -242,17 +257,24 @@ QTreeView {
   border: none;
 }
 
+QTreeView::item {
+  padding: 5px;
+}
+
 QTreeView::item:hover {
   background: #111;
+  padding: 0px;
 }
 
 QTreeView::item:pressed {
   background: #222;
+  padding: 0px;
 }
 
 QTreeView::item:selected {
   background: #111;
   color: #f5f5f7;
+  padding: 0px;
 }
 
 QTreeView:disabled {
@@ -281,6 +303,10 @@ QTreeView::indicator:indeterminate {
 
 QTreeView::indicator:indeterminate:disabled {
   image: url(:/uitheme/assets/checkbox_indeterminate_disabled.svg);
+}
+
+QAbstractItemView {
+  alternate-background-color: #000;
 }
 
 /*
