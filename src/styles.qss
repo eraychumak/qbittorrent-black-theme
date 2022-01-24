@@ -19,6 +19,7 @@ QMenuBar {
 
 QMenuBar::item {
   padding: 5px 10px;
+  width: 100%;
   color: #f5f5f7;
 }
 
@@ -36,9 +37,13 @@ QMenuBar::item:pressed {
 
 QMenu {
   background: #000;
+  border: 1px solid #222;
+  left: 50px;
 }
 
 QMenu::item {
+  margin: 0;
+  padding: 5px 10px 5px 5px;
   background: #000;
   color: #f5f5f7;
 }
@@ -49,7 +54,8 @@ QMenu::item:selected {
 
 QMenu::separator {
   background: #222;
-  height: 2px;
+  height: 1px;
+}
 }
 
 /*
