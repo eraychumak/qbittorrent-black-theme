@@ -123,11 +123,19 @@ QToolBar QLineEdit {
 */
 
 QSplitter::handle {
-  background: #222;
+  background: #111;
+}
+
+QSplitter::handle:horizontal {
+  width: 1px;
+}
+
+QSplitter::handle:vertical {
+  height: 1px;
 }
 
 QSplitter::handle:pressed {
-  background: #333;
+  background: #222;
 }
 
 /*
