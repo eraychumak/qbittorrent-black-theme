@@ -110,6 +110,15 @@ QToolButton:pressed {
 }
 
 /*
+  QLineEdit in QToolBar
+*/
+
+QToolBar QLineEdit {
+  background: #000;
+  margin: 0 5px;
+}
+
+/*
   QSplitter
 */
 
