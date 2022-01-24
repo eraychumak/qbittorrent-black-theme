@@ -1,6 +1,6 @@
 # qBittorrent Client / Black Theme
 
-A fully dark theme for qBittorrent client, just simple black and white, nothing else.
+A full dark theme for the qBittorrent client, just simple black and white, nothing else.
 
 ## Preview
 
@@ -8,20 +8,16 @@ A fully dark theme for qBittorrent client, just simple black and white, nothing 
 
 ## Download
 
-<a href="./black.qbtheme" download>qBittorrent Black Theme (.qbtheme)</a>
+<a href="./black.qbtheme" download>qBittorrent Black Theme (black.qbtheme)</a>
 
-_This theme was made for qBittorrent v4.3.4.1_
+_This theme was last updated for qBittorrent v4.4.0_
 
 Open up `Options` _(`ALT`+`O`)_ and check `Use custom UI Theme` and select the `black.qbtheme` file.
 
 ## Make your own
 
-### Prerequisites
-
-- Python
-
 ### Generating a `.qbtheme` file
 
 1. Run `./build.bat` to generate the `black.qbtheme` file.
 
-Look through `styles.qss`, it contains all the style changes and refer to [QT Stylesheet Reference](https://doc.qt.io/qt-5/stylesheet-reference.html) if you wish.
+Look through `stylesheet.qss`, it contains all the style changes and refer to [QT Style Sheets Examples](https://doc.qt.io/qt-6/stylesheet-examples.html) if you wish.
