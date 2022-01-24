@@ -2,4 +2,15 @@
 
 set SCRIPT_DIR=src
 
-py make.py -base-dir %SCRIPT_DIR%\ -find-files -config config.json -output black -style styles.qss
+set "themePath=black.qbtheme"
+
+if exist "./tools/rcc.exe" (
+  if exist "./src/resources.qrc" (
+    "./tools/rcc.exe" ./src/resources.qrc -o %themePath% -binary
+    @echo Compiled %themePath% binary.
+  ) else (
+    @echo resources.qrc file is missing.
+  )
+) else (
+  @echo rcc.exe file is missing.
+)
