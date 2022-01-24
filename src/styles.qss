@@ -411,7 +411,7 @@ QScrollBar::down-arrow:vertical {
 QScrollBar::add-page:vertical,
 QScrollBar::sub-page:vertical
 {
-    background: none;
+  background: none;
 }
 
 /*
@@ -469,21 +469,21 @@ QLineEdit:disabled:read-only
 */
 
 QHeaderView::section {
-  background: #111;
+  background: #000;
+  padding: 0 5px;
   color: #f5f5f7;
 }
 
 QHeaderView::section:hover {
-  background: #222;
+  background: #111;
 }
 
-QHeaderView::section:checked
-{
-  background-color: red;
+QHeaderView::down-arrow {
+  image: url(:/uitheme/assets/down_arrow.svg);
 }
 
-QAbstractItemView {
-  alternate-background-color: #000;
+QHeaderView::up-arrow {
+  image: url(:/uitheme/assets/up_arrow.svg);
 }
 
 /*
