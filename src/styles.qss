@@ -56,6 +56,21 @@ QMenu::separator {
   background: #222;
   height: 1px;
 }
+
+QMenu::icon {
+  padding: 0 5px;
+}
+
+QMenu::indicator {
+  padding: 0 5px;
+}
+
+QMenu::indicator:checked {
+  image: url(:/uitheme/assets/checkbox_checked.svg);
+}
+
+QMenu::indicator:unchecked {
+  image: url(:/uitheme/assets/checkbox_unchecked.svg);
 }
 
 /*
