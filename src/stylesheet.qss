@@ -480,10 +480,16 @@ QHeaderView::section:hover {
 
 QHeaderView::down-arrow {
   image: url(:/uitheme/assets/down_arrow.svg);
+  height: 12px;
+  margin: 5px;
+  width: 12px;
 }
 
 QHeaderView::up-arrow {
   image: url(:/uitheme/assets/up_arrow.svg);
+  height: 12px;
+  margin: 5px;
+  width: 12px;
 }
 
 /*
