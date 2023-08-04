@@ -5,11 +5,7 @@
 		<file>icons/stalledDL.svg</file>
 		<file>icons/stalledUP.svg</file>
 		<file>assets/checkbox_checked.svg</file>
-		<file>assets/checkbox_checked_disabled.svg</file>
-		<file>assets/checkbox_indeterminate.svg</file>
-		<file>assets/checkbox_indeterminate_disabled.svg</file>
 		<file>assets/checkbox_unchecked.svg</file>
-		<file>assets/checkbox_unchecked_disabled.svg</file>
 		<file>assets/down_arrow.svg</file>
 		<file>assets/down_arrow_disabled.svg</file>
 		<file>assets/up_arrow.svg</file>

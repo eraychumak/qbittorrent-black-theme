@@ -67,6 +67,7 @@ QMenu::indicator {
 
 QMenu::indicator:checked {
   image: url(:/uitheme/assets/checkbox_checked.svg);
+  backgr
 }
 
 QMenu::indicator:unchecked {
@@ -281,30 +282,6 @@ QTreeView:disabled {
   color: #555;
 }
 
-QTreeView::indicator:checked {
-  image: url(:/uitheme/assets/checkbox_checked.svg);
-}
-
-QTreeView::indicator:unchecked {
-  image: url(:/uitheme/assets/checkbox_unchecked.svg);
-}
-
-QTreeView::indicator:checked:disabled {
-  image: url(:/uitheme/assets/checkbox_checked_disabled.svg);
-}
-
-QTreeView::indicator:unchecked:disabled {
-  image: url(:/uitheme/assets/checkbox_unchecked_disabled.svg);
-}
-
-QTreeView::indicator:indeterminate {
-  image: url(:/uitheme/assets/checkbox_indeterminate.svg);
-}
-
-QTreeView::indicator:indeterminate:disabled {
-  image: url(:/uitheme/assets/checkbox_indeterminate_disabled.svg);
-}
-
 QAbstractItemView {
   alternate-background-color: #000;
 }
@@ -508,30 +485,6 @@ QCheckBox:disabled {
   color: #555;
 }
 
-QCheckBox::indicator:checked {
-  image: url(:/uitheme/assets/checkbox_checked.svg);
-}
-
-QCheckBox::indicator:unchecked {
-  image: url(:/uitheme/assets/checkbox_unchecked.svg);
-}
-
-QCheckBox::indicator:checked:disabled {
-  image: url(:/uitheme/assets/checkbox_checked_disabled.svg);
-}
-
-QCheckBox::indicator:unchecked:disabled {
-  image: url(:/uitheme/assets/checkbox_unchecked_disabled.svg);
-}
-
-QCheckBox::indicator:indeterminate {
-  image: url(:/uitheme/assets/checkbox_indeterminate.svg);
-}
-
-QCheckBox::indicator:indeterminate:disabled {
-  image: url(:/uitheme/assets/checkbox_indeterminate_disabled.svg);
-}
-
 /*
   QComboBox
 */
@@ -624,22 +577,6 @@ QGroupBox QCheckBox {
 
 QGroupBox::title:disabled {
   color: #555;
-}
-
-QGroupBox::indicator:checked {
-  image: url(:/uitheme/assets/checkbox_checked.svg);
-}
-
-QGroupBox::indicator:unchecked {
-  image: url(:/uitheme/assets/checkbox_unchecked.svg);
-}
-
-QGroupBox::indicator:checked:disabled {
-  image: url(:/uitheme/assets/checkbox_checked_disabled.svg);
-}
-
-QGroupBox::indicator:unchecked:disabled {
-  image: url(:/uitheme/assets/checkbox_unchecked_disabled.svg);
 }
 
 TransferListWidget {
