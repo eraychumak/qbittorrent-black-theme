@@ -10,7 +10,7 @@ A full dark theme for the qBittorrent client, just simple black and white, nothi
 
 <a href="./black.qbtheme" download>qBittorrent Black Theme (black.qbtheme)</a>
 
-_This theme was last updated for qBittorrent v4.4.0_
+_This theme was last updated for qBittorrent v4.5.4 (lt20 - qt6)_
 
 Open up `Options` _(`ALT`+`O`)_ and check `Use custom UI Theme` and select the `black.qbtheme` file.
 
