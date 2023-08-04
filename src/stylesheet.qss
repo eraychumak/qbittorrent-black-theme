@@ -94,8 +94,7 @@ QToolBar::separator {
 */
 
 QToolButton {
-  width: none;
-  height: none;
+  padding: 5px;
   border: none;
   background: #000;
 }
